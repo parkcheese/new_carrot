@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  background: #485330;
+}
+
+button {
+  outline: none;
+}
+
+.background {
+  width: 800px;
+  height: 500px;
+  background: url(img/background.png) center/cover;
+  margin: auto;
+  border-radius: 2%;
+  overflow: hidden;
+  position: relative;
+}
+
+header .start__btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: none;
+  background: #a8c26f;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 300ms;
+}
+
+header .start__btn:hover {
+  background: #849957;
+}
+
+.game__timer {
+  margin: auto;
+  width: 100px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background: #849957;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  user-select: none;
+}
+
+.game__score {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  margin: auto;
+  line-height: 50px;
+  border-radius: 25px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff2a7b;
+  user-select: none;
+}
+
+.field {
+  position: relative;
+  margin: 20px auto;
+  width: 760px;
+  height: 230px;
+}
+
+.carrot {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  transform: translate(20px, 70px);
+  cursor: pointer;
+}
+
+.bug {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(70px, 100px);
+  cursor: pointer;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  display: none;
+}
+.popup.on {
+  display: block;
+}
+
+.popup__refresh {
+  width: 80px;
+  height: 80px;
+  margin: 200px auto 30px;
+  border-radius: 20px;
+  border: none;
+  background: #a8c26f;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup__refresh i {
+  transition: all 300ms;
+}
+
+.popup__refresh:hover {
+  background: #849957;
+}
+.popup__refresh:hover i {
+  transform: rotate(45deg);
+}
